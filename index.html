@@ -20,7 +20,7 @@
   }
   body{font-family:'DM Sans',sans-serif;background:var(--paper);color:var(--ink);min-height:100vh}
   h1,h2,h3{font-family:'Fraunces',serif;font-weight:500}
-
+ 
   /* NAV */
   nav{background:var(--ink);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:56px;position:sticky;top:0;z-index:100}
   .logo{font-family:'Fraunces',serif;font-size:1.2rem;color:#fff;font-style:italic;letter-spacing:-0.5px}
@@ -31,14 +31,14 @@
   .nav-tab.active{color:#fff;background:rgba(255,255,255,0.15)}
   .nav-score{color:rgba(255,255,255,0.7);font-size:0.8rem}
   .nav-score strong{color:#fff;font-size:1rem;font-family:'Fraunces',serif}
-
+ 
   /* LAYOUT */
   main{max-width:860px;margin:0 auto;padding:2rem 1.5rem}
-
+ 
   /* CARDS */
   .card{background:#fff;border:1px solid var(--paper3);border-radius:var(--r);padding:1.5rem;box-shadow:var(--shadow)}
   .card+.card{margin-top:1rem}
-
+ 
   /* BUTTONS */
   btn,button.btn{display:inline-flex;align-items:center;gap:6px;padding:10px 20px;border-radius:var(--r2);border:1.5px solid var(--ink);background:#fff;color:var(--ink);font-family:'DM Sans',sans-serif;font-size:0.875rem;font-weight:500;cursor:pointer;transition:all 0.15s}
   button.btn:hover{background:var(--ink);color:#fff}
@@ -48,7 +48,7 @@
   button.btn.ghost{border-color:var(--paper3);color:var(--ink2)}
   button.btn.ghost:hover{border-color:var(--ink3);background:var(--paper2)}
   button.btn:disabled{opacity:0.4;cursor:not-allowed}
-
+ 
   /* TAGS */
   .tag{display:inline-block;padding:3px 10px;border-radius:20px;font-size:0.75rem;font-weight:500}
   .tag.math{background:#e8f0fd;color:#1a3f6b}
@@ -57,24 +57,24 @@
   .tag.hard{background:var(--danger-lt);color:var(--danger)}
   .tag.medium{background:var(--warn-lt);color:var(--warn)}
   .tag.easy{background:var(--accent-lt);color:var(--accent)}
-
+ 
   /* PROGRESS BAR */
   .progress-wrap{background:var(--paper2);border-radius:20px;height:8px;overflow:hidden}
   .progress-fill{height:100%;border-radius:20px;transition:width 0.5s ease;background:var(--accent)}
   .progress-fill.warn{background:var(--warn)}
   .progress-fill.danger{background:var(--danger)}
-
+ 
   /* SCORE RING */
   .ring-wrap{display:flex;flex-direction:column;align-items:center;gap:4px}
   .ring-label{font-size:0.75rem;color:var(--ink3);text-align:center}
   .ring-val{font-family:'Fraunces',serif;font-size:1.5rem;font-weight:500}
-
+ 
   /* TOPIC PILL */
   .topic-row{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--paper2)}
   .topic-row:last-child{border-bottom:none}
   .topic-name{flex:1;font-size:0.875rem;font-weight:500}
   .topic-pct{font-size:0.8rem;font-weight:500;min-width:36px;text-align:right}
-
+ 
   /* QUESTION */
   .q-header{display:flex;align-items:center;gap:8px;margin-bottom:1rem}
   .q-text{font-size:1rem;line-height:1.65;color:var(--ink);margin-bottom:1.5rem}
@@ -87,12 +87,12 @@
   .choice.wrong{border-color:var(--danger);background:var(--danger-lt)}
   .choice-letter{width:22px;height:22px;border-radius:50%;border:1.5px solid currentColor;display:flex;align-items:center;justify-content:center;font-size:0.75rem;font-weight:600;flex-shrink:0;margin-top:1px}
   .explanation{margin-top:1rem;padding:1rem;background:var(--info-lt);border-left:3px solid var(--info);border-radius:0 var(--r2) var(--r2) 0;font-size:0.875rem;line-height:1.6;color:var(--info)}
-
+ 
   /* LOADING */
   .loading{display:flex;flex-direction:column;align-items:center;gap:1rem;padding:3rem}
   .spinner{width:36px;height:36px;border:2px solid var(--paper3);border-top-color:var(--accent);border-radius:50%;animation:spin 0.7s linear infinite}
   @keyframes spin{to{transform:rotate(360deg)}}
-
+ 
   /* STUDY PLAN */
   .plan-week{margin-bottom:1.5rem}
   .plan-week-title{font-size:0.75rem;font-weight:500;color:var(--ink3);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.75rem}
@@ -101,30 +101,30 @@
   .plan-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;margin-top:6px}
   .plan-item-text{flex:1;font-size:0.875rem;line-height:1.5}
   .plan-item-tag{font-size:0.75rem;color:var(--ink3)}
-
+ 
   /* DASHBOARD GRID */
   .dash-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-bottom:1.5rem}
   .stat-box{background:var(--paper);border:1px solid var(--paper3);border-radius:var(--r);padding:1rem;text-align:center}
   .stat-num{font-family:'Fraunces',serif;font-size:2rem;font-weight:500;line-height:1}
   .stat-label{font-size:0.75rem;color:var(--ink3);margin-top:4px}
-
+ 
   /* SECTION TITLES */
   .section-title{font-size:1.5rem;font-weight:500;margin-bottom:0.25rem}
   .section-sub{font-size:0.875rem;color:var(--ink3);margin-bottom:1.5rem}
-
+ 
   /* TOPIC SELECTOR */
   .topic-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:8px;margin:1rem 0}
   .topic-btn{background:var(--paper2);border:1.5px solid var(--paper3);border-radius:var(--r2);padding:10px 14px;font-size:0.82rem;font-weight:500;cursor:pointer;text-align:left;transition:all 0.15s;color:var(--ink2)}
   .topic-btn:hover{border-color:var(--ink3);background:var(--paper)}
   .topic-btn.active{border-color:var(--accent);background:var(--accent-lt);color:var(--accent)}
-
+ 
   .streak-badge{display:inline-flex;align-items:center;gap:4px;background:#fff3e0;color:#b85c1a;border-radius:20px;padding:4px 12px;font-size:0.78rem;font-weight:500}
   .hidden{display:none!important}
   @media(max-width:600px){.dash-grid{grid-template-columns:repeat(2,1fr)}.nav-score{display:none}}
 </style>
 </head>
 <body>
-
+ 
 <nav>
   <div class="logo">Score<span>Path</span></div>
   <div class="nav-tabs">
@@ -134,9 +134,9 @@
   </div>
   <div class="nav-score">Est. Score: <strong id="nav-score">—</strong></div>
 </nav>
-
+ 
 <main>
-
+ 
 <!-- PRACTICE PAGE -->
 <div id="page-practice">
   <div id="setup-panel">
@@ -161,7 +161,7 @@
       </div>
     </div>
   </div>
-
+ 
   <div id="question-panel" class="hidden">
     <div style="display:flex;align-items:center;gap:10px;margin-bottom:1rem">
       <button class="btn ghost sm" onclick="resetToSetup()">← New Question</button>
@@ -185,18 +185,18 @@
     </div>
   </div>
 </div>
-
+ 
 <!-- PROGRESS PAGE -->
 <div id="page-progress" class="hidden">
   <h1 class="section-title">Your Progress</h1>
   <p class="section-sub">Based on <span id="total-answered">0</span> questions answered</p>
-
+ 
   <div class="dash-grid">
     <div class="stat-box"><div class="stat-num" id="stat-correct">—</div><div class="stat-label">Correct</div></div>
     <div class="stat-box"><div class="stat-num" id="stat-accuracy">—</div><div class="stat-label">Accuracy</div></div>
     <div class="stat-box"><div class="stat-num" id="stat-streak">—</div><div class="stat-label">Day Streak</div></div>
   </div>
-
+ 
   <div class="card" style="margin-bottom:1rem">
     <h2 style="font-size:1rem;margin-bottom:1rem">Estimated SAT Score</h2>
     <div style="display:flex;gap:1.5rem;align-items:center">
@@ -216,7 +216,7 @@
       </div>
     </div>
   </div>
-
+ 
   <div class="card">
     <h2 style="font-size:1rem;margin-bottom:1rem">Topics — Accuracy Breakdown</h2>
     <div id="topic-breakdown">
@@ -224,7 +224,7 @@
     </div>
   </div>
 </div>
-
+ 
 <!-- STUDY PLAN PAGE -->
 <div id="page-plan" class="hidden">
   <h1 class="section-title">Your Study Plan</h1>
@@ -247,15 +247,15 @@
     <div style="text-align:center;margin-top:0.75rem"><button class="btn primary sm" onclick="showPage('practice')">Start Practicing →</button></div>
   </div>
 </div>
-
+ 
 </main>
-
+ 
 <script>
 const TOPICS = {
   'Math': ['Algebra','Advanced Math','Problem-Solving & Data','Geometry & Trig','Linear Equations','Quadratics','Statistics','Functions'],
   'Reading & Writing': ['Craft & Structure','Information & Ideas','Standard English','Expression of Ideas','Vocabulary in Context','Textual Evidence','Inference','Rhetoric']
 };
-
+ 
 let state = {
   subject: 'Math',
   topic: null,
@@ -264,9 +264,9 @@ let state = {
   answered: false,
   history: JSON.parse(localStorage.getItem('sp_history')||'[]'),
 };
-
+ 
 function save(){localStorage.setItem('sp_history',JSON.stringify(state.history))}
-
+ 
 function showPage(p){
   document.querySelectorAll('[id^="page-"]').forEach(el=>el.classList.add('hidden'));
   document.getElementById('page-'+p).classList.remove('hidden');
@@ -274,19 +274,19 @@ function showPage(p){
   if(p==='progress')renderProgress();
   if(p==='plan')loadPlan();
 }
-
+ 
 function setSubject(s){
   state.subject=s;state.topic=null;
   document.getElementById('subj-math').classList.toggle('active',s==='Math');
   document.getElementById('subj-reading').classList.toggle('active',s==='Reading & Writing');
   renderTopics();
 }
-
+ 
 function setDiff(d){
   state.difficulty=d;
   ['easy','medium','hard'].forEach(x=>document.getElementById('diff-'+x).classList.toggle('active',x===d));
 }
-
+ 
 function renderTopics(){
   const g=document.getElementById('topic-grid');
   g.innerHTML='';
@@ -298,23 +298,23 @@ function renderTopics(){
     g.appendChild(b);
   });
 }
-
+ 
 async function generateQuestion(){
   state.answered=false;
   document.getElementById('setup-panel').classList.add('hidden');
   document.getElementById('question-panel').classList.remove('hidden');
   document.getElementById('q-loading').classList.remove('hidden');
   document.getElementById('q-content').classList.add('hidden');
-
+ 
   const topicStr=state.topic||`a random ${state.subject} topic`;
   const prompt=`You are an expert SAT tutor. Generate a realistic ${state.difficulty} difficulty SAT Digital test question on the topic: "${topicStr}" (subject: ${state.subject}).
-
+ 
 The question must:
 - Be authentic SAT style
 - Have exactly 4 answer choices labeled A, B, C, D
 - Have one clearly correct answer
 - Include a brief passage/stimulus if appropriate for the topic
-
+ 
 Respond ONLY in this exact JSON format (no markdown, no preamble):
 {
   "topic": "${topicStr}",
@@ -331,7 +331,7 @@ Respond ONLY in this exact JSON format (no markdown, no preamble):
   "correct": "A",
   "explanation": "Brief 2-3 sentence explanation of why the answer is correct and the key concept tested."
 }`;
-
+ 
   try{
     const res=await fetch('https://api.anthropic.com/v1/messages',{
       method:'POST',
@@ -351,20 +351,20 @@ Respond ONLY in this exact JSON format (no markdown, no preamble):
     document.getElementById('q-choices').innerHTML='';
   }
 }
-
+ 
 function renderQuestion(q){
   document.getElementById('q-loading').classList.add('hidden');
   document.getElementById('q-content').classList.remove('hidden');
-
+ 
   const tags=document.getElementById('q-tags');
   tags.innerHTML=`<span class="tag ${q.subject==='Math'?'math':'reading'}">${q.subject}</span> <span class="tag ${q.difficulty}">${q.difficulty}</span> <span class="tag" style="background:var(--paper2);color:var(--ink2)">${q.topic||q.subject}</span>`;
-
+ 
   const passage=document.getElementById('q-passage');
   if(q.passage&&q.passage.trim()){passage.textContent=q.passage;passage.style.display='block'}
   else{passage.style.display='none'}
-
+ 
   document.getElementById('q-text').textContent=q.question;
-
+ 
   const choicesEl=document.getElementById('q-choices');
   choicesEl.innerHTML='';
   ['A','B','C','D'].forEach(letter=>{
@@ -378,39 +378,39 @@ function renderQuestion(q){
   document.getElementById('q-explanation').classList.add('hidden');
   document.getElementById('q-actions').classList.add('hidden');
 }
-
+ 
 function selectAnswer(letter){
   if(state.answered)return;
   state.answered=true;
   const q=state.currentQ;
   const correct=letter===q.correct;
-
+ 
   ['A','B','C','D'].forEach(l=>{
     const el=document.getElementById('choice-'+l);
     el.style.cursor='default';
     if(l===q.correct)el.classList.add('correct');
     if(l===letter&&!correct)el.classList.add('wrong');
   });
-
+ 
   document.getElementById('q-explanation').textContent=q.explanation;
   document.getElementById('q-explanation').classList.remove('hidden');
   document.getElementById('q-actions').classList.remove('hidden');
-
+ 
   state.history.push({subject:q.subject,topic:q.topic||q.subject,difficulty:q.difficulty,correct,ts:Date.now()});
   save();
   updateNavScore();
 }
-
+ 
 function resetToSetup(){
   document.getElementById('setup-panel').classList.remove('hidden');
   document.getElementById('question-panel').classList.add('hidden');
 }
-
+ 
 function updateNavScore(){
   const score=calcEstScore();
   document.getElementById('nav-score').textContent=score.total>0?score.total:'—';
 }
-
+ 
 function calcEstScore(){
   if(state.history.length<3)return{total:0,math:0,rw:0};
   const mathH=state.history.filter(h=>h.subject==='Math');
@@ -420,7 +420,7 @@ function calcEstScore(){
   const rwScore=Math.round(200+acc(rwH)*600);
   return{total:mathScore+rwScore,math:mathScore,rw:rwScore};
 }
-
+ 
 function renderProgress(){
   const h=state.history;
   document.getElementById('total-answered').textContent=h.length;
@@ -429,7 +429,7 @@ function renderProgress(){
   document.getElementById('stat-correct').textContent=correct;
   document.getElementById('stat-accuracy').textContent=h.length?acc+'%':'—';
   document.getElementById('stat-streak').textContent='1🔥';
-
+ 
   const score=calcEstScore();
   document.getElementById('est-total').textContent=score.total||'—';
   if(score.total){
@@ -438,17 +438,17 @@ function renderProgress(){
     document.getElementById('est-math-bar').style.width=((score.math-200)/600*100)+'%';
     document.getElementById('est-rw-bar').style.width=((score.rw-200)/600*100)+'%';
   }
-
+ 
   const topicMap={};
   h.forEach(item=>{
     if(!topicMap[item.topic])topicMap[item.topic]={correct:0,total:0,subject:item.subject};
     topicMap[item.topic].total++;
     if(item.correct)topicMap[item.topic].correct++;
   });
-
+ 
   const tb=document.getElementById('topic-breakdown');
   if(!Object.keys(topicMap).length){tb.innerHTML='<p style="color:var(--ink3);font-size:0.875rem">Answer some questions to see your topic breakdown.</p>';return}
-
+ 
   const sorted=Object.entries(topicMap).sort((a,b)=>a[1].correct/a[1].total-b[1].correct/b[1].total);
   tb.innerHTML=sorted.map(([topic,data])=>{
     const pct=Math.round(data.correct/data.total*100);
@@ -462,7 +462,7 @@ function renderProgress(){
     </div>`;
   }).join('');
 }
-
+ 
 async function loadPlan(){
   if(state.history.length<5){
     document.getElementById('plan-loading').classList.add('hidden');
@@ -473,7 +473,7 @@ async function loadPlan(){
   document.getElementById('plan-loading').classList.remove('hidden');
   document.getElementById('plan-content').classList.add('hidden');
   document.getElementById('plan-empty').classList.add('hidden');
-
+ 
   const topicMap={};
   state.history.forEach(item=>{
     if(!topicMap[item.topic])topicMap[item.topic]={correct:0,total:0,subject:item.subject};
@@ -482,17 +482,17 @@ async function loadPlan(){
   });
   const topicSummary=Object.entries(topicMap).map(([t,d])=>`${t}: ${Math.round(d.correct/d.total*100)}% accuracy (${d.total} questions)`).join('\n');
   const overall=state.history.length?Math.round(state.history.filter(x=>x.correct).length/state.history.length*100):0;
-
+ 
   const prompt=`You are an expert SAT tutor. A student has the following performance data:
-
+ 
 Overall accuracy: ${overall}%
 Questions answered: ${state.history.length}
-
+ 
 Topic-by-topic accuracy:
 ${topicSummary}
-
+ 
 Create a personalized 2-week SAT study plan for this student. Identify their 2-3 weakest topics and build a focused plan.
-
+ 
 Respond ONLY in this JSON format (no markdown, no extra text):
 {
   "summary": "2-3 sentences identifying their main weaknesses and the focus of the plan",
@@ -519,7 +519,7 @@ Respond ONLY in this JSON format (no markdown, no extra text):
     }
   ]
 }`;
-
+ 
   try{
     const res=await fetch('https://api.anthropic.com/v1/messages',{
       method:'POST',
@@ -536,12 +536,12 @@ Respond ONLY in this JSON format (no markdown, no extra text):
     document.getElementById('plan-empty').classList.remove('hidden');
   }
 }
-
+ 
 function renderPlan(plan){
   document.getElementById('plan-loading').classList.add('hidden');
   document.getElementById('plan-content').classList.remove('hidden');
   document.getElementById('plan-summary').textContent=plan.summary;
-
+ 
   const colors=['#1a3f6b','#2a5c45','#6b1a3d','#b85c1a'];
   const weeksEl=document.getElementById('plan-weeks');
   weeksEl.innerHTML='';
@@ -562,10 +562,11 @@ function renderPlan(plan){
     weeksEl.appendChild(sec);
   });
 }
-
+ 
 // init
 renderTopics();
 updateNavScore();
 </script>
 </body>
 </html>
+ 
